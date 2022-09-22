@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6%;
+}
+
+form{
+    background-color: #fff;
+    max-width: 700px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 30px;
+
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #398E96;
+    font-size: 33px;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form .input-s{
+    position: relative;
+    margin: 25px;
+}
+
+form .input-s label{
+    position: absolute;
+    left: 0;
+    cursor: text;
+    transition: all 0.2s;
+    color: #398E96;
+}
+
+form .input-s .input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #398E96;
+    font-size: 16px;
+    padding: 5px;
+}
+
+form .input-s .input:focus{
+    border-bottom: 2px solid #398E96;
+}
+
+form .input-s .input:focus ~ label,
+form .input-s .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #398E96;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    background-color: #398E96;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
